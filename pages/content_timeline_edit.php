@@ -225,7 +225,7 @@ $my_has_id=false;
                                             <!--</div>-->
                                             <div class="tsort-content">
                                                 <div class="tsort-dataid">
-                                                    <div class="edit-header-title">EDIT ITEM <?php echo $num; ?><!--<small><i>- <?php echo $arr['item-title']; $arr['dataid'];  ?></i></small> &nbsp;--></div>
+                                                    <div class="edit-header-title">EDIT ITEM <?php echo $num; ?><!--<small><i>- <?php echo $arrcd $arr['dataid'];  ?></i></small> &nbsp;--></div>
                                                     <input name="<?php echo $key?>-my-post-id" id="<?php echo $key;?>-my-post-id" class="" type="hidden" value="<?php echo esc_attr($arr['my-post-id'])?>"/>
                                                     <div class="check-back-color" style="<?php if(array_key_exists('start-item', $arr)) echo 'background-color:#F1592B'; ?>">
                                                         <input type="checkbox" id="<?php echo $key; ?>-start-item" name="<?php echo $key; ?>-start-item" class="tsort-start-item alignright" <?php if(array_key_exists('start-item', $arr)) echo 'checked="checked"'; ?> /><label for="<?php echo $key; ?>-start-item" class="alignright">STARTING ITEM &nbsp;</label></div>
