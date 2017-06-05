@@ -1282,16 +1282,12 @@
             '									</div>\n'+
             '								</div>\n'+
             '								<div class="item-info-wrapper">\n'+
-            '							<table style="width:96%; margin-bottom: 9px; border-spacing: 0px 4px;">\n'+
+            '							<table style="width:93%; height: 98%; margin-top: 6px; border-spacing: 0px 4px; ">\n' +
             '								<tr><td colspan="2"><span class="timeline-help dashicons dashicons-editor-help" style="margin-top: -2px;"><span class="timeline-tooltip">Title text that is displayed on the card</span></span><div class="item-title-div"><div class="tsort-title-div" style="margin-left:27px;">TITLE:</div></td></tr>\n'+
             '								<tr><td colspan="2"><input class="tsort-title" name="sort'+itemNumber+'-item-title" value="'+pr.title+'" type="text" /></div></td></tr>\n'+
-            '							</table>\n'+
             '								<div class="clear"></div>\n'+
-            '                               <table style="width:96%; margin-bottom: 9px; border-spacing: 0px 4px;">\n'+
             '								<tr><td colspan="2"><span class="timeline-help dashicons dashicons-editor-help" style="margin-top: -2px;"><span class="timeline-tooltip">Intro text that is displayed on the card</span></span><div class="tsort-contarea-title" style="margin-left:27px;">EXCERPT:</div></td></tr>\n'+
             '								<tr><td colspan="2"><textarea style="" class="tsort-contarea" name="sort'+itemNumber+'-item-content">'+pr.itemContent+'</textarea></td></tr>\n'+
-            '								</table>\n'+
-            '								<table style="width:100%; margin-bottom: 9px; border-spacing: 0px 4px;">\n'+
             '								<tr>\n'+
             '									<td style="width:120px;"><span class="timeline-help dashicons dashicons-editor-help" style="margin-top: -1px;"> <span class="timeline-tooltip">"Photo URL can be image, video or site url. Leave it empty to link to full-size image.</span></span><label for="sort'+itemNumber+'-item-prettyPhoto" style="margin-left:7px; font-size:14px; font-weight:bold;">PHOTO URL:</label></td>\n'+
             '									<td style="width:120px;"><span class="timeline-help dashicons dashicons-editor-help" style="margin-top: -1px;"><span class="timeline-tooltip">Link to post or page. Leave it empty for default behaivor.</span></span><label for="sort'+itemNumber+'-item-link" style="margin-left:7px;font-size:14px; font-weight:bold;">BUTTON URL:</label></td>\n'+
@@ -1300,8 +1296,6 @@
             '									<td><input class="tsort-prettyPhoto" name="sort'+itemNumber+'-item-prettyPhoto" placeholder="http://..." value="'+pr.itemPrettyPhoto+'" type="text" style="width:91%;" /></td>\n'+
             '									<td><input class="tsort-link" name="sort'+itemNumber+'-item-link" placeholder="http://..." value="'+pr.itemLink+'" type="text" style="width:91%;" /></td>\n'+
             '								</tr>\n'+
-            '								</table>\n'+
-            '								<table style="width:100%; margin-bottom: 9px; border-spacing: 0px 4px;">\n'+
             '								<tr>\n'+
             '									<td style="width:120px;"><span class="timeline-help dashicons dashicons-editor-help" style="margin-top: -1px;"><span class="timeline-tooltip">Argument by which are elements organised (date - dd/mm/yyyy, Category - full category name) Different field is used for different categorizing type.</span></span><label for="sort'+itemNumber+'-dataid" style="margin-left:7px; font-size:14px; font-weight:bold;">DATE:</label>'+
             '									<td style="width:120px;"><span class="timeline-help dashicons dashicons-editor-help" style="margin-top: -1px;"><span class="timeline-tooltip">Category that the post belongs to</span></span><label style="margin-left:7px; font-size:14px; font-weight:bold;" for="sort'+itemNumber+'-categoryid">CATEGORY:</label>'+
@@ -1310,13 +1304,11 @@
             '									<td><input class="data_id" style="width:91%;" id="sort'+itemNumber+'-dataid" name="sort'+itemNumber+'-dataid" value="'+pr.dataId+'" type="text"/>'+
             '									<td><input class="category_id" style="width:91%;";" id="sort'+itemNumber+'-categoryid" name="sort'+itemNumber+'-categoryid" placeholder="Blog posts..." value="'+pr.categoryId+'" type="text"/>'+
             '								</tr>\n'+
-            '								</table>\n'+
             '								<!--<span class="timeline-help dashicons dashicons-editor-help"><span class="timeline-tooltip">Argument by which are elements organised (date - dd/mm/yyyy, Category - full category name) Different field is used for different categorizing type.</span></span>'+
             '								<label for="sort'+itemNumber+'-dataid">DATE:</label>'+
             '								<input style="margin-left:5px;" id="sort'+itemNumber+'-dataid" name="sort'+itemNumber+'-dataid" value="'+pr.dataId+'" type="text"/>'+
             '								<label style="margin-left:5px;" for="sort'+itemNumber+'-categoryid">CATEGORY:</label>'+
             '								<input style="margin-left:5px;" id="sort'+itemNumber+'-categoryid" name="sort'+itemNumber+'-categoryid" placeholder="Blog posts..." value="'+pr.categoryId+'" type="text"/>-->'+
-            '								<table style="width:96%; border-spacing: 0px 4px;">\n'+
             '								<tr><td colspan="2"><span class="timeline-help dashicons dashicons-editor-help" style="margin-top: -2px;"><span class="timeline-tooltip">Text that is displayed when the user hovers over the node in the timeline</span></span><label style="margin-left:27px; display:block; font-size:14px; font-weight:bold;" for="sort'+itemNumber+'-node-name">TITLE OF TIMELINE NODE (OPTIONAL):</label></td></tr>'+
             '								<tr><td colspan="2"><input class="title-optional" style="width:100%; color: #888888;" id="sort'+itemNumber+'-node-name" name="sort'+itemNumber+'-node-name" placeholder="Title goes here..." value="" type="text" /></td></tr>'+
             '							</table>\n'+
@@ -1331,16 +1323,12 @@
             '								</div>\n'+
             '								</div>\n'+
             '								<div class="itemopen-info-wrapper">\n'+
-            '								<table style="width:96%; margin-bottom:9px; border-spacing: 0px 4px;">\n'+
+            '								<table style="width:93%; margin-top: 2px; border-spacing: 0px 12px;">\n' +
             '								<tr><td colspan="2"><span class="timeline-help dashicons dashicons-editor-help" style="margin-top: -2px;"><span class="timeline-tooltip">Title text for the active (opened) item</span></span><div class="tsort-title-div" style="margin-left:27px;">TITLE:</div></td></tr>\n'+
             '								<tr><td colspan="2"><input class="tsort-title" name="sort'+itemNumber+'-item-open-title" value="'+pr.title+'" type="text" /></td></tr>\n'+
-            '								</table>\n'+
             '								<div class="clear"></div>\n'+
-            '								<table style="width:96%; margin-bottom:9px; border-spacing: 0px 4px;">\n'+
             '								<tr><td colspan="2"><span class="timeline-help dashicons dashicons-editor-help" style="margin-top: -2px;"><span class="timeline-tooltip">Content that is displayed in an active (opened) item</span></span><div class="tsort-contarea-title" style="margin-left:27px;">CONTENT:</div></td></tr>\n'+
             '								<tr><td colspan="2"><textarea class="tsort-contarea-open" name="sort'+itemNumber+'-item-open-content">'+pr.itemOpenContent+'</textarea></td></tr>\n'+
-            '								</table>\n'+
-            '								<table style="width:96%; margin-bottom:9px; border-spacing: 0px 4px;">\n'+
             '								<tr>\n'+
             '									<td style="width:120px;"><span class="timeline-help dashicons dashicons-editor-help" style="margin-top: -1px;"><span class="timeline-tooltip">"Photo URL can be image, video or site url. LEAVE IT EMPTY TO DISPLAY FULL SIZED IMAGE.</span></span><label for="sort'+itemNumber+'-item-open-prettyPhoto" style="margin-left:7px; font-size:14px; font-weight:bold;">PHOTO URL:</label></td>\n'+
             '								</tr>\n'+
